@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>SoulConnect - Hybrid Dating App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-800 text-white scroll-smooth relative">
+  <!-- 🔹 Navbar -->
+
+  <nav id="navbar"
+    class="bg-slate-950/80 backdrop-blur-md shadow-lg sticky top-0 z-50 transition-transform duration-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 relative">
+        <div
+          class="text-2xl font-extrabold bg-gradient-to-r from-pink-400 to-pink-600 text-transparent bg-clip-text animate-heart">
+          💞 SoulConnect
+        </div>
+        <div class="hidden md:flex items-center space-x-6 text-sm font-semibold">
+          <a href="#home" class="nav-link hover:text-pink-400 transition">Home</a>
+          <a href="#about" class="nav-link hover:text-pink-400 transition">About</a>
+          <a href="#features" class="nav-link hover:text-pink-400 transition">Features</a>
+          <a href="#safety" class="nav-link hover:text-pink-400 transition">Safety</a>
+          <div class="relative group">
+            <button class="nav-link join-dual hover:text-pink-400 transition focus:outline-none">
+              Join Us
+            </button>
+            <div
+              class="absolute top-full mt-2 right-0 hidden group-hover:flex flex-col bg-slate-800 shadow-md rounded-lg overflow-hidden w-40 z-50 text-sm font-normal">
+              <a href="#login" class="block px-4 py-2 hover:bg-pink-600 hover:text-white transition">Login</a>
+              <a href="#signup" class="block px-4 py-2 hover:bg-pink-600 hover:text-white transition">Signup</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🎥 Hero Section -->
+
+  <main id="home" class="relative text-center py-32 px-4 overflow-hidden">
+    <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover opacity-20 -z-10">
+      <source src="https://www.w3schools.com/tags/mov_bbb.mp4" type="video/mp4" />
+    </video>
+
+    <!-- ❤️ Floating Heart (Right Side) -->
+
+    <div class="absolute right-10 bottom-10 text-pink-500 text-2xl floating-heart z-10 select-none">
+      ❤️
+    </div>
+
+    <h1 class="text-5xl font-bold mb-4 leading-tight z-10 relative">
+      Find Love Your Way 💖
+    </h1>
+    <p class="text-lg text-slate-300 max-w-xl mx-auto z-10 relative">
+      Whether you're here to chat, date, or find the one — SoulConnect lets
+      you match based on your real intent.
+    </p>
+    <a href="#features"
+      class="mt-8 inline-block bg-pink-600 hover:bg-pink-700 transition px-6 py-3 rounded-full text-white font-semibold shadow-md z-10 relative">
+      Explore Features
+    </a>
+  </main>
+
+  <!-- ✨ Features Section -->
+
+  <section id="features" class="py-20 px-6 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10">
+      Why Choose SoulConnect?
+    </h2>
+    <div class="scroll-container">
+      <div class="scrolling-wrapper">
+        <div class="flex gap-6" id="features-wrapper"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 👫 Popular Profiles Section -->
+
+  <section class="py-20 px-6 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10">Popular Profiles 💘</h2>
+    <div class="scroll-container">
+      <div class="scrolling-wrapper-right">
+        <div class="flex gap-6" id="profiles-wrapper"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔻 Footer -->
+
+  <footer class="bg-slate-950 text-slate-400 text-sm py-12 relative overflow-hidden">
+    <div
+      class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+      <div class="flex flex-wrap justify-center md:justify-start gap-4">
+        <a href="#about" class="hover:text-pink-400 transition">About Us</a>
+        <a href="#" class="hover:text-pink-400 transition">Privacy Policy</a>
+        <a href="#" class="hover:text-pink-400 transition">Terms</a>
+        <a href="#contact" class="hover:text-pink-400 transition">Contact</a>
+      </div>
+      <div class="text-xs text-slate-500">
+        © 2025 SoulConnect. All rights reserved.
+      </div>
+    </div>
+
+    <!-- ❤️ Floating Heart in Footer -->
+
+    <div class="absolute left-10 bottom-4 text-pink-500 text-2xl floating-heart select-none">
+      ❤️
+    </div>
+  </footer>
+
+  <!-- 🔧 Templates -->
+
+  <template id="features-cards">
+    <div class="min-w-[300px] bg-slate-800 p-6 rounded-xl shadow hover:shadow-pink-500 transition">
+      <h3 class="text-xl font-semibold mb-2 text-pink-400">
+        🌈 Inclusive Matching
+      </h3>
+      <p class="text-slate-300">
+        Match with men, women, and transgender people — safely and genuinely.
+      </p>
+    </div>
+    <div class="min-w-[300px] bg-slate-800 p-6 rounded-xl shadow hover:shadow-pink-500 transition">
+      <h3 class="text-xl font-semibold mb-2 text-pink-400">
+        🔒 Privacy First
+      </h3>
+      <p class="text-slate-300">
+        Everything you do stays private — encrypted and secure always.
+      </p>
+    </div>
+    <div class="min-w-[300px] bg-slate-800 p-6 rounded-xl shadow hover:shadow-pink-500 transition">
+      <h3 class="text-xl font-semibold mb-2 text-pink-400">
+        🎮 Fun Ways to Connect
+      </h3>
+      <p class="text-slate-300">
+        Voice intros, memes, and desi filters to keep things exciting.
+      </p>
+    </div>
+  </template>
+
+  <template id="profile-cards">
+    <div class="min-w-[250px] bg-slate-800 p-4 rounded-xl shadow hover:shadow-pink-500 transition">
+      <img src="https://randomuser.me/api/portraits/men/75.jpg" class="rounded-full w-20 h-20 mx-auto mb-3"
+        alt="Aryan" />
+      <h3 class="text-lg font-semibold text-pink-400">Aryan, 25</h3>
+      <p class="text-sm text-slate-300">🎧 Music Lover • Delhi</p>
+    </div>
+    <div class="min-w-[250px] bg-slate-800 p-4 rounded-xl shadow hover:shadow-pink-500 transition">
+      <img src="https://randomuser.me/api/portraits/women/45.jpg" class="rounded-full w-20 h-20 mx-auto mb-3"
+        alt="Riya" />
+      <h3 class="text-lg font-semibold text-pink-400">Riya, 22</h3>
+      <p class="text-sm text-slate-300">📸 Photographer • Mumbai</p>
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
